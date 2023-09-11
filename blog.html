@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Blog Questions</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+        rel="stylesheet"
+        type="text/css" />
+    <script
+        src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <h1
+            class="text-5xl font-bold my-7">
+            Blog Questions : </h1>
+        <h3
+            class="text-3xl font-semibold my-5">
+            Discuss the scope of <span
+                class="bg-slate-400 rounded-lg py-1 px-4">var</span>,
+            <span
+                class="bg-slate-400 rounded-lg py-1 px-4">let</span>,
+            and <span
+                class="bg-slate-400 rounded-lg py-1 px-2">const</span>
+        </h3>
+        <p>
+            var, let, and const are
+            three different ways to
+            declare variables in
+            JavaScript, and they have
+            different scopes and
+            behaviors. Understanding
+            their scopes is crucial for
+            writing clean and
+            predictable code.
+            <br>
+
+            <span
+                class="text-3xl font-semibold">var:</span>
+            <br>
+            Function-Scoped: Variables
+            declared with var are
+            function-scoped, which means
+            they are accessible only
+            within the function in which
+            they are declared. If
+            declared outside any
+            function, they become
+            globally scoped.
+            Hoisting: Declarations with
+            var are hoisted, which means
+            the variable is moved to the
+            top of its containing
+            function or global scope
+            during compilation. However,
+            only the declaration is
+            hoisted, not the
+            initialization.
+            Can be redeclared within the
+            same scope.
+        </p>
+        <span
+            class="text-3xl font-semibold">let:</span>
+        <br>
+
+        Block-Scoped: Variables declared
+        with let are block-scoped,
+        meaning they are accessible only
+        within the block (enclosed by
+        curly braces) in which they are
+        defined. They are also
+        function-scoped when declared
+        within a function.
+        Not hoisted: Like var, let
+        declarations are hoisted, but
+        unlike var, they are not
+        initialized with undefined by
+        default.
+        Cannot be redeclared within the
+        same scope.
+        </p>
+        <span
+            class="text-3xl font-semibold">const:</span>
+        <br>
+
+        Block-Scoped: Like let,
+        variables declared with const
+        are block-scoped.
+        Not hoisted: Similar to let,
+        const declarations are also
+        hoisted but not initialized with
+        undefined.
+        Constants: Variables declared
+        with const cannot be reassigned
+        after initialization. However,
+        if the variable is an object or
+        an array, its properties or
+        elements can be modified.
+        </p>
+        <h3
+            class="text-3xl font-semibold my-5">
+            Tell us the use cases of
+            <span
+                class=" bg-slate-400 rounded-lg py-1 px-4">null</span>,
+            and <span
+                class="bg-slate-400 rounded-lg py-1 px-4">undefined</span>
+        </h3>
+        <p>
+            In JavaScript, null and
+            undefined are two distinct
+            values that are often used
+            to represent missing or
+            non-existent data. They have
+            specific use cases and
+            meanings within the
+            language:
+            <br>
+            <span
+                class="text-3xl font-semibold">null:</span>
+            <br>
+
+            Explicit Absence of Value:
+            null is a value that
+            represents the explicit
+            absence of any object value
+            or no value at all. It is
+            often used when you want to
+            indicate that a variable
+            should have no meaningful
+            value or that an object
+            property or array element is
+            intentionally empty.
+            Assigned by Developers:
+            Developers typically set a
+            variable to null to indicate
+            that it has no value or that
+            it should be cleared of any
+            existing value.
+            Use Cases:
+            Initializing variables that
+            will hold objects later.
+            Clearing values from
+            variables.
+            Marking an element in an
+            array or property in an
+            object as intentionally
+            empty.
+            <br>
+            <span
+                class="text-3xl font-semibold">undefined:</span>
+            <br>
+
+            Implicit Absence of Value:
+            undefined is a value that
+            indicates a variable has
+            been declared but has not
+            been assigned a value yet.
+            It is also returned when you
+            try to access an object
+            property or array element
+            that does not exist.
+            Automatically Assigned:
+            JavaScript automatically
+            assigns undefined to
+            variables that are declared
+            but not explicitly
+            initialized.
+            Use Cases:
+            Default values for function
+            parameters when no argument
+            is passed.
+            As the initial value of
+            variables before they are
+            assigned a meaningful value.
+            To check if a property or
+            variable exists.
+        </p>
+        <h3
+            class="text-3xl font-semibold my-5">
+            What do you mean by REST
+            API? </h3>
+        <p>
+            REST API, or
+            Representational State
+            Transfer Application
+            Programming Interface, is a
+            set of architectural
+            principles and constraints
+            for designing and
+            interacting with web
+            services. It is an approach
+            to building networked
+            applications and services in
+            a way that leverages the
+            HTTP protocol and its
+            features. REST is commonly
+            used for creating APIs in
+            web and mobile applications
+            because of its simplicity,
+            scalability, and ease of
+            use.
+
+            Key characteristics and
+            principles of REST APIs
+            <br>
+            include:
+            <br>
+
+            Stateless: Each request from
+            a client to a server must
+            contain all the information
+            needed to understand and
+            process the request. The
+            server does not store any
+            client state. This makes
+            REST APIs scalable and easy
+            to manage.
+
+            Resource-Based: In REST,
+            everything is treated as a
+            resource, which can be a
+            physical object, a data
+            entity, or a concept.
+            Resources are uniquely
+            identified by URIs (Uniform
+            Resource Identifiers).
+
+            HTTP Methods: REST APIs use
+            standard HTTP methods (GET,
+            POST, PUT, DELETE, etc.) to
+            perform actions on
+            resources. Each method has a
+            specific meaning and should
+            correspond to a specific
+            CRUD (Create, Read, Update,
+            Delete) operation.
+            <br>
+
+            Stateless Communication:
+            <br>
+            Communication between
+            clients and servers in REST
+            is stateless, meaning each
+            request/response pair is
+            independent and does not
+            rely on previous requests or
+            responses.
+
+            Representation: Resources
+            can have multiple
+            representations (e.g., JSON,
+            XML, HTML) to support
+            different clients or use
+            cases. Clients specify their
+            desired representation using
+            HTTP headers.
+
+            Uniform Interface: REST APIs
+            follow a uniform and
+            consistent set of
+            constraints, including the
+            use of standard HTTP
+            methods, resource URIs, and
+            self-descriptive messages.
+
+            Layered System: A REST
+            architecture can be
+            organized into multiple
+            layers, such as load
+            balancers, caching, and
+            authentication, which can
+            improve scalability and
+            security.
+
+            Stateless Server: Servers in
+            a RESTful architecture do
+            not store any client state
+            between requests, which
+            allows for easy horizontal
+            scaling.
+
+            Cacheability: Responses from
+            the server can be explicitly
+            marked as cacheable or
+            non-cacheable using HTTP
+            caching mechanisms,
+            improving performance and
+            reducing server load.
+
+            Client-Server Separation:
+            The client and server are
+            separate entities that
+            communicate over a network.
+            This separation allows for
+            independent development and
+            scalability of both clients
+            and servers.
+
+            Self-Descriptive Messages:
+            REST APIs should include
+            metadata or information
+            about how to interpret the
+            data, making the API more
+            self-explanatory and easier
+            to use.
+
+            Overall, RESTful APIs are
+            widely used in web
+            development for building web
+            services that can be
+            consumed by a variety of
+            clients, including web
+            browsers, mobile apps, and
+            other server-side
+            applications. They provide a
+            flexible and scalable way to
+            expose and interact with
+            data and services over the
+            internet.
+        </p>
+    </main>
+</body>
+
+</html>

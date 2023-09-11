@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHero Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-11/12 mx-auto ">
+    <header>
+        <div class="navbar bg-base-100  mb-10  mt-5">
+            <div class="navbar-start">
+              <a class="btn btn-ghost normal-case text-3xl font-bold"><span><img src="play.svg" alt=""></span><span class="text-red-600">PH</span> Tube</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <button onclick="sortView()" class="px-5 py-2 bg-stone-300 rounded-md">Sort by view</button>
+            </div>
+            <div class="navbar-end  ">
+              <button onclick="blogHandler()" class="btn bg-red-500 text-white text-base font-medium">Blog</button>
+            </div>
+          </div>
+          <hr>
+    </header>
+    <main>
+    <section>
+      <div id="menu-container" class="mt-10 grid grid-cols-2 lg:grid-cols-4 ml-60 mr-60">
+        
+      </div>
+    </section>
+    <section class="mt-8">
+      <div id="video-container" class="">
+        
+      </div>
+    </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
+<!-- grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 -->
